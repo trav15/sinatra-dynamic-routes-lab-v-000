@@ -7,8 +7,7 @@ class App < Sinatra::Base
   end
 
   get '/square/:number' do
-    # @square = params[:number]*params[:number]
-    # "#{@square}"
-    "#{params[:number]}"
+    @square = params[:number] * params[:number]
+    "#{@square}"
   end
 end
